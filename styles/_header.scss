@@ -1,0 +1,18 @@
+header {
+    background-image: url(/images/Sydkorea.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    .header-h1 {
+        font-family: 'poppins';
+        
+    }
+}

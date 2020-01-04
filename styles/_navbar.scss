@@ -1,0 +1,16 @@
+.navlist {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+    li {
+        a {
+        font-family: 'poppins';
+        text-decoration: none;
+        color: grey;
+        }
+        a:hover {
+            color: red;
+        }
+        
+    }
+}
