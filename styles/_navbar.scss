@@ -1,16 +1,104 @@
-.navlist {
-    list-style-type: none;
-    display:flex;
-    justify-content: space-evenly;
-    li {
-        a {
-        font-family: 'poppins';
-        text-decoration: none;
-        color: grey;
-        }
-        a:hover {
-            color: red;
-        }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #333;
+    font-family: 'poppins';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px;
+    z-index: 5;
+}
+.logo{
+    color: rgb(226,226,266);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.navlist{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style: none;
+}
+.navlist a {
+    color: rgb(226,226,266);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(226,226,266);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+    .navlist {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
+    .navlist {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 80px;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 2px 5px 0px;
+        width: 30%;
+        transform: translateX(100%);
+        list-style-type: none;
+        // transition: transform 1s ease-in;  PROBLEM: togglas när man förminskar rutan. LÖSNING: lägg i onclick burger toggle.
+    }
+    .navlist li{
+        opacity: 0;
+    }
+    .burger{
+        display:block;
         
     }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,5px);
+
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-5px);
 }

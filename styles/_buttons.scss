@@ -1,0 +1,21 @@
+@mixin button {
+    height: 32px;
+    width: auto;
+    padding: 0rem 1rem;
+    border-radius: 0px;
+    border: 2px solid rgb(170, 111, 0);
+    text-transform: uppercase;
+    font-family: 'poppins';
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+.button-primary {
+    @include button;
+    color: ghostwhite;
+    letter-spacing: 2px;
+}

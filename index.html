@@ -6,66 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="/javascript/app.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <nav>
+        <h4 class="logo">THE NAV</h4>
         <ul class="navlist">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/gallery.html">Gallery</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+            
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
     </nav>
-    <header>
-        <h1 class="header-h1">Greetings!</h1>
-        
-
-    </header>
+    <header id="header">
+      <div class="header-wrapper">
+          <div class="header-video">
+              <video id="video-ct" src="/video/balloooons.mp4" autoplay="true" muted="true" loop="true"></video>
+          </div>
+          <div class="header-hero">
+              <h1>Digital products</h1>
+              
+              <a href="/pages/about.html">
+                  <button class="button button-primary">Read more</button>
+              </a>
+          </div>
+          <div class="header-overlay"></div>
+      </div>
+  </header>
     <main>
-        <div class="header">
-            <h1>Mina bilder</h1>
-            <p>Här kan man scrolla igenom alla mina bilder</p>
+        <div class="gridHeader">
+            <h1>Gallery</h1>
+            <p></p>
           </div>
         <div class="row"> 
             <div class="column">
               <img src="images/Sydkorea.jpg" style="width:100%">
               <img src="images/veteranCarFoundInForest.jpg" style="width:100%">
-              <img src="images/bestTreeTopper.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
-              <img src="/w3images/nature.jpg" style="width:100%">
-              <img src="/w3images/mist.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
+              
+
             </div>
             <div class="column">
               <img src="images/KilearnScotland.jpg" style="width:100%">
-              <img src="/w3images/ocean.jpg" style="width:100%">
-              <img src="/w3images/wedding.jpg" style="width:100%">
-              <img src="/w3images/mountainskies.jpg" style="width:100%">
-              <img src="/w3images/rocks.jpg" style="width:100%">
-              <img src="/w3images/underwater.jpg" style="width:100%">
+
             </div>  
             <div class="column">
               <img src="images/elCapitan.jpg" style="width:100%">
-              <img src="/w3images/rocks.jpg" style="width:100%">
-              <img src="/w3images/falls2.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
-              <img src="/w3images/nature.jpg" style="width:100%">
-              <img src="/w3images/mist.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
+
             </div>
             <div class="column">
               <img src="images/SunriseInPayson.jpg" style="width:100%">
-              <img src="/w3images/ocean.jpg" style="width:100%">
-              <img src="/w3images/wedding.jpg" style="width:100%">
-              <img src="/w3images/mountainskies.jpg" style="width:100%">
-              <img src="/w3images/rocks.jpg" style="width:100%">
-              <img src="/w3images/underwater.jpg" style="width:100%">
+              
             </div>
-          </div>
-          
-          </body>
+          </div>       
     </main>
-    
+  
 </body>
 </html>

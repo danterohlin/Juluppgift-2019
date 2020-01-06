@@ -1,14 +1,17 @@
 
-
-
 body {
   margin: 0;
   font-family: Arial;
+  background-color: #333;
 }
 
-.header {
+.gridHeader {
   text-align: center;
-  padding: 32px;
+  padding: 20px;
+  font-family: 'poppins';
+  font-size: 16px;
+  color: whitesmoke;
+  background-color: #333;
 }
 
 .row {
@@ -17,12 +20,14 @@ body {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+  width: 80%;
+  margin: auto;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; /* IE10 */
-  flex: 25%;
+  flex: 20%;
   max-width: 25%;
   padding: 0 4px;
 }
