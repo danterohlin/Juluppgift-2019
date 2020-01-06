@@ -18,6 +18,10 @@
           transform: translateY(2px);
 }
 
+li a:hover {
+  color: #ffd381;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
