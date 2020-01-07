@@ -29,6 +29,10 @@ li a:hover {
           box-sizing: border-box;
 }
 
+main {
+  min-height: 80vh;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +43,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 8vh;
-  background-color: #333;
+  background-color: #252525;
   font-family: 'poppins';
   position: fixed;
   top: 0;
@@ -114,6 +118,9 @@ nav {
     -webkit-box-shadow: 0px 2px 5px 0px;
             box-shadow: 0px 2px 5px 0px;
     width: 30%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     list-style-type: none;
@@ -180,6 +187,8 @@ header {
   position: relative;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  -webkit-box-shadow: 2px 2px 5px 2px;
+          box-shadow: 2px 2px 5px 2px;
 }
 
 header .header-wrapper {
@@ -291,6 +300,7 @@ body {
 
 main {
   top: 50px;
+  position: relative;
 }
 
 main .about-wrapper {
@@ -309,5 +319,67 @@ main .about-wrapper h1 {
 
 main .about-wrapper p {
   color: #fff;
+}
+
+.gallery-wrapper {
+  margin-top: 10vh;
+}
+
+footer {
+  color: white;
+  font-family: 'poppins';
+  height: 20vh;
+  background-color: #252525;
+  margin-top: 10vh;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  position: relative;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2vh;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #833AB4;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

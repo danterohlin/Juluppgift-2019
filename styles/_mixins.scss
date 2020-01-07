@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+main {
+  min-height: 80vh;
+}
 
 @mixin mobile {
     @media (max-width: #{$tablet-width - 1px}) {
