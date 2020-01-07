@@ -1,0 +1,22 @@
+main {
+    top: 50px;
+    position: relative;
+
+    .contact-wrapper {
+        top: 20vh;
+        position: relative;
+        width: 60%;
+        margin: auto;
+        height: 40vh;
+        color: #fff;
+        text-align: center;
+        font-family: 'poppins';
+        h1 {
+            color: white;
+        }
+        p {
+            color: #fff;
+        }
+    }
+
+}

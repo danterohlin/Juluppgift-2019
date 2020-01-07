@@ -12,11 +12,12 @@ nav{
     box-shadow: 0px 0px 5px 0px;
     z-index: 5;
 }
-.logo{
+.logo a{
     color: rgb(226,226,266);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    text-decoration: none;
 }
 .navlist{
     display: flex;

@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav>
-        <h4 class="logo">THE PROD</h4>
+        <h4 class="logo"><a href="index.html">THE PROD</a></h4>
         <ul class="navlist">
             <li><a href="index.html">Home</a></li>
             <li><a href="./pages/gallery.html">Gallery</a></li>
@@ -42,29 +42,38 @@
       </div>
   </header>
     <main>
-        <div class="gridHeader">
-            <h1>Gallery</h1>
-            <p></p>
-          </div>
-        <div class="row"> 
-            <div class="column">
-              <img src="images/Sydkorea.jpg" style="width:100%">
-              
+      <div class="slideshow-container">
 
-            </div>
-            <div class="column">
-              <img src="images/KilearnScotland.jpg" style="width:100%">
-
-            </div>  
-            <div class="column">
-              <img src="images/elCapitan.jpg" style="width:100%">
-
-            </div>
-            <div class="column">
-              <img src="images/SunriseInPayson.jpg" style="width:100%">
-              
-            </div>
-          </div>       
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/images/person-wearing-beige-sweater-holding-map-inside-vehicle-1252500.jpg" style="width:100%">
+          <div class="text">On the road</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/images/asphalt-environment-grass-highway-239520.jpg" style="width:100%">
+          <div class="text">Highway</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/images/group-of-people-sitting-on-hill-772665.jpg" style="width:100%">
+          <div class="text">The chill hill</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+           
     </main>
 
 <footer id="footer">
