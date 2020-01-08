@@ -3,14 +3,19 @@
     width: auto;
     padding: 0rem 1rem;
     border-radius: 0px;
-    border: 2px solid rgb(170, 111, 0);
+    border: 2px solid rgb(255, 167, 4);
     text-transform: uppercase;
     font-family: 'poppins';
     outline: none;
     cursor: pointer;
     background-color: transparent;
+    font-weight: 500;
     &:active {
         transform: translateY(2px);
+    }
+    &:hover {
+        background-color: rgba(255, 196, 87, 0.712);
+        border: 2px solid rgb(255, 196, 86);
     }
 }
 
@@ -21,5 +26,9 @@
 }
 
 li a:hover {
-    color: rgb(255, 211, 129);
+    color: rgb(255, 179, 64);
+}
+li a {
+    display: inline-block;
+    padding: 15px 20px;
 }

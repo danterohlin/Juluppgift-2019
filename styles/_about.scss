@@ -1,22 +1,39 @@
 main {
-    top: 50px;
     position: relative;
-
+    min-height: 70vh;
     .about-wrapper {
-        top: 20vh;
+        top: 15vh;
         position: relative;
-        width: 60%;
+        width: 50%;
         margin: auto;
         height: 40vh;
-        
         text-align: center;
         font-family: 'poppins';
         h1 {
-            color: white;
+            color: #55ACEE;
+            margin-bottom: 2vh;
         }
         p {
             color: #fff;
+            font-size: 14px;
         }
     }
 
+}
+
+@include tablet {
+    .about-wrapper p {
+        font-size: 11px;
+        width: 80%;
+    }
+}
+
+@include mobile {
+    .about-wrapper {
+        width: 80%;
+    }
+    .about-wrapper p {
+        font-size: 11px;
+
+    }
 }

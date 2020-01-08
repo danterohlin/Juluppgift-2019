@@ -2,21 +2,29 @@
 footer {
     color: white;
     font-family: 'poppins';
-    height: 20vh;
+    height: 22vh;
     background-color: rgb(37, 37, 37);
     margin-top: 10vh;
     bottom: 0px;
     width: 100%;
     left: 0px;
     position: relative;
-    padding-top: 4vh;
-    
+    padding-top: 2vh;
+    .copyright{
+      color: rgb(139, 139, 139);
+      font-size: 14px;
+    }
 }
-.row {
+.footer-wrapper {
+  text-align: center;
+}
+.footerRow {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;  
+
 }
 .fa {
     padding: 20px;
@@ -53,9 +61,28 @@ footer {
     color: white;
   }
 
-  
+@include tablet {
+  .copyright {
+    font-size: 11px;
+  }
+}
+@include mobile {
+  .copyright {
+    font-size: 11px;
+  }
+  .footer-wrapper {
+    text-align: center;
+  }
+  .footerRow{
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer {
+    padding-top: 2vh;
+    height: 22vh;
+  }
+  .indexMain {
+    min-height: 45vh;
+  }
 
-
-  
-
- 
+}

@@ -3,22 +3,28 @@ header {
     position: relative;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     box-shadow: 2px 2px 5px 2px;
+
     .header-wrapper{
             height: 100vh;
             display: flex;
             align-items: center;
-            color: ghostwhite;
+            color: rgb(255, 255, 255);
             
         .header-hero {
             z-index: 1;
             margin: auto;
             // clip-path: polygon(0% 0% 10% 0%);
+            padding-left: 0vh;
+            padding-right: 0vh;
+                
+            
             h1{
                 font-size: 3rem;
                 margin-bottom: 1rem;
                 font-family: 'poppins';
                 letter-spacing: 10px;
                 text-transform: uppercase;
+                
             }
             p{
                 font-size: 1.2rem;
@@ -52,4 +58,34 @@ header {
     height: auto;
     z-index: -1;
 
+}
+
+.scrollDown {
+    z-index: 4;
+    color: rgb(172, 172, 172);
+    margin-top: 93vh;
+    position: absolute;
+    right: 10vh;
+    font-family: 'poppins';
+    letter-spacing: 3px;
+}
+
+@include mobile {
+    .header-hero {
+    text-align: center;
+    }
+    .scrollDown {
+        margin-top:95vh;
+        right: 3vh;
+        font-size: 11px;
+    }
+}
+@include tablet {
+    .header-hero {
+    text-align: center;
+    }
+    .scrollDown {
+        margin-top:95vh;
+        right: 7vh;
+    }
 }
