@@ -1,10 +1,10 @@
-main {
+.main-wrapper {
     position: relative;
     min-height: 70vh;
     .about-wrapper {
-        top: 15vh;
+        top: 10vh;
         position: relative;
-        width: 50%;
+        width: 40%;
         margin: auto;
         height: 40vh;
         text-align: center;
@@ -22,18 +22,25 @@ main {
 }
 
 @include tablet {
-    .about-wrapper p {
-        font-size: 11px;
-        width: 80%;
+    .main-wrapper {
+        .about-wrapper {
+            width: 60%;
+            top: 15vh;
+        }
+        .about-wrapper p {
+            font-size: 12px;
+        }
     }
 }
 
 @include mobile {
-    .about-wrapper {
-        width: 80%;
-    }
-    .about-wrapper p {
-        font-size: 11px;
-
+    .main-wrapper {
+        .about-wrapper {
+            width: 80%;
+            top: 15vh;
+        }
+        .about-wrapper p {
+            font-size: 11px;
+        }
     }
 }
