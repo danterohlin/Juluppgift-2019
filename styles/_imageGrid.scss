@@ -8,6 +8,7 @@
       background-color: $basegrey-color;
       letter-spacing: 2px;
       font-weight: 400;
+      margin-top: 3vh;
     }
     .row {
       display: -ms-flexbox; /* IE10 */
@@ -26,7 +27,7 @@
     /* Fyra columner */
     .column {
       -ms-flex: 25%; /* IE10 */
-      flex: 20%;
+      flex: 25%;
       max-width: 25%;
       padding: 0 4px;
     }
@@ -39,7 +40,7 @@
   @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 50%;
-      flex: 50%;
+      flex: 20%;
       max-width: 50%;
     }
   }

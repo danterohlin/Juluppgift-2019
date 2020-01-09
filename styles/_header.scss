@@ -1,16 +1,26 @@
 header {
     width: 100%;
     position: relative;
-    clip-path: circle(50.0% at 50% 34%);
-    height: 150vh;
+    // clip-path: circle(50.0% at 50% 34%);
+    height: 180vh;
     .header-wrapper{
             height: 100vh;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            text-align: center;
             color: rgb(255, 255, 255);
-        .header-hero {
+            .header-logo {
+                z-index: 1;
+                font-family: 'poppins';
+                margin-top: 50vh;
+                letter-spacing: 40px;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.692);
+                font-size: 20px;
+            }
+            .header-hero {
             z-index: 1;
-            margin: auto;
+            padding-top: 70vh;
             // clip-path: polygon(0% 0% 10% 0%);
             padding-left: 0vh;
             padding-right: 0vh;
@@ -20,7 +30,6 @@ header {
                 font-family: 'poppins';
                 letter-spacing: 10px;
                 text-transform: uppercase;
-                
             }
             p{
                 font-size: 1.2rem;
