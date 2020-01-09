@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="/javascript/app.js" defer></script>
-    <script src="/javascript/slide.js" defer></script>
     <title>Document</title>
 </head>
 <body>
   <svg class="scrollDown" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     width="20" height="20"
     viewBox="0 0 172 172"
-    style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M5.80285,39.39875l8.8279,-12.1002l71.36925,51.7634l71.36925,-51.7634l8.8279,12.1002l-80.19715,58.15965z" fill="#cccccc"></path><path d="157.1349,28.79925l7.5594,10.36085l-78.6943,57.07175l-78.69215,-57.07175l7.5594,-10.36085l69.87285,50.6755l1.2599,0.9159l1.26205,-0.9159l69.87285,-50.6755M157.6079,25.8l-71.6079,51.9354l-71.6079,-51.9354l-10.0921,13.83525l81.7,59.25185l81.7,-59.25185l-10.0921,-13.83525z" fill="#ecf0f1"></path><g><path d="M5.80285,86.68585l8.8279,-12.1045l71.36925,51.7849l71.36925,-51.7849l8.8279,12.1045l-80.19715,58.18545z" fill="#cccccc"></path><path d="157.1349,76.0799l7.5594,10.3673l-78.6943,57.09755l-78.69215,-57.09755l7.5594,-10.3673l69.8707,50.697l1.26205,0.91805l1.26205,-0.9159l69.87285,-50.69915M157.6079,73.08065l-71.6079,51.9569l-71.6079,-51.9569l-10.0921,13.8417l81.7,59.27765l81.7,-59.27765l-10.0921,-13.8417z" fill="#ecf0f1"></path></g></g><path d="" fill="none"></path><path d="" fill="none"></path></g></g></svg>
-  <nav>
-        <h4 class="logo"><a href="index.html">DIGIT</a></h4>
+
+    style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M5.80285,39.39875l8.8279,-12.1002l71.36925,51.7634l71.36925,-51.7634l8.8279,12.1002l-80.19715,58.15965z" fill="#cccccc"></path><path  fill="#ecf0f1"></path><g><path d="M5.80285,86.68585l8.8279,-12.1045l71.36925,51.7849l71.36925,-51.7849l8.8279,12.1045l-80.19715,58.18545z" fill="#cccccc"></path><path fill="#ecf0f1"></path></g></g><path d="" fill="none"></path><path d="" fill="none"></path></g></g></svg>
+    <nav class="navbar">
+        <h4 class="logo"><a href="index.html"> digit</a></h4>
+
         <ul class="navlist">
             <li><a href="index.html">Home</a></li>
             <li><a href="./pages/gallery.html">Gallery</a></li>
@@ -25,80 +26,53 @@
             <li><a href="./pages/contact.html">Contact</a></li>
             
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+        <figure class="burger">
+          <figure class="line1"></figure>
+          <figure class="line2"></figure>
+          <figure class="line3"></figure>
+        </figure>
     </nav>
     <header id="header">
-      <div class="header-wrapper">
-          <div class="header-video">
+      <section class="header-wrapper">
+          <figure class="header-video">
               <video id="video-ct" src="/video/balloooons.mp4" autoplay="true" muted="true" loop="true"></video>
-          </div>
+          </figure>
           <div class="header-hero">
-              <h1>Digital products</h1>
-              
+              <h1>Showcase sample</h1>
               <a href="/pages/about.html">
                   <button class="button button-primary">Read more</button>
               </a>
           </div>
           <div class="header-overlay"></div>
           
-      </div>
+      </section>
       
   </header>
-    <main class="indexMain">
-      <div class="slideshow-container">
-        <h2></h2>
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="images/person-wearing-beige-sweater-holding-map-inside-vehicle-1252500.jpg" style="width:100%">
-          <div class="text">To the coast</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="/images/asphalt-environment-grass-highway-239520.jpg" style="width:100%">
-          <div class="text">Highway</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="/images/group-of-people-sitting-on-hill-772665.jpg" style="width:100%">
-          <div class="text">The chill hill</div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-           
-    </main>
+<main>
+  
+</main>
 
 <footer id="footer">
         <div class="footer-wrapper">
           <ul class="footerRow">
-              <div class="col1">
-                <h3>Follow us</h3>
-                  <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a href="#" class="fa fa-linkedin"></a>
-                  <a href="#" class="fa fa-instagram"></a>
-                  
-              </div>
-              
-              <p class="copyright">&copy; Digit. All rights reserved.</p>
-              
+
+              <nav class="col1">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <!--more symbols.
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-skype"></a>
+                <a href="#" class="fa fa-reddit"></a>
+                <a href="#" class="fa fa-rss"></a> 
+                -->
+              </nav>
+              <p class="copyright">&copy; Dante Rohlin. All rights reserved.</p>
+
         </ul>
-        
       </div>
 </footer>
   

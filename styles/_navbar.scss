@@ -1,17 +1,23 @@
 
-nav{
+body {
+    margin: 0;
+    background-color: $basegrey-color;
+  }
+  main {
+    min-height: 0vh;
+    background-color: $basegrey-color;
+  }
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgb(37, 37, 37);
+    background-color: $lightgrey-color;
     font-family: 'poppins';
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0px 0px 5px 0px;
     z-index: 5;
-    
 }
 .logo a{    
     color: rgb(255, 255, 255);
@@ -20,9 +26,8 @@ nav{
     font-size: 20px;
     text-decoration: none;
     padding-left: 7vh;
-
     &:hover {
-        color: rgb(255, 167, 4);
+        color: $hover-color;
     }
 }
 
@@ -43,7 +48,7 @@ nav{
     display: none;
     cursor: pointer;
 }
-.burger div{
+.burger figure{
     width: 25px;
     height: 2px;
     background-color: rgb(226,226,266);
@@ -65,22 +70,20 @@ nav{
         }
         .burger{
             display:block;
-            
         }
         .navlist {
             position: absolute;
             right: 0px;
             height: 92vh;
-            top: 80px;
-            background-color: rgb(37, 37, 37);
+            top: 70px;
+            background-color: $lightgrey-color;
             display: flex;
             flex-direction: column;
-            box-shadow: 0px 2px 5px 0px;
+            box-shadow: 0px 0px 0px 0px; // om jag vill ha skugga, tyckte tillslut att det blev bättre utan.
             width: 40%;
             align-items: center;
             transform: translateX(100%);
             list-style-type: none;
-
             // transition: transform 1s ease-in;  PROBLEM: togglas när man förminskar rutan. LÖSNING: lägg i onclick burger toggle.
         }
         .logo a {
@@ -88,7 +91,7 @@ nav{
 
         }
         .logo a:hover {
-            color: rgb(255, 179, 64);
+            color: $hover-color;
         }
         .nav-active {
             transform: translateX(0%);

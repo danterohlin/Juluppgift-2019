@@ -2,9 +2,9 @@
     position: relative;
     min-height: 70vh;
     .about-wrapper {
-        top: 15vh;
+        top: 10vh;
         position: relative;
-        width: 50%;
+        width: 40%;
         margin: auto;
         height: 40vh;
         text-align: center;
@@ -23,9 +23,14 @@
 
 @include tablet {
     .main-wrapper {
+
+        .about-wrapper {
+            width: 60%;
+            top: 15vh;
+        }
         .about-wrapper p {
-            font-size: 11px;
-            width: 80%;
+            font-size: 12px;
+
         }
     }
 }
@@ -34,6 +39,8 @@
     .main-wrapper {
         .about-wrapper {
             width: 80%;
+
+            top: 15vh;
         }
         .about-wrapper p {
             font-size: 11px;
