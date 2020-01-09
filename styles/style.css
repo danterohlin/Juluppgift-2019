@@ -495,12 +495,12 @@ img {
   }
 }
 
-main {
+.main-wrapper {
   position: relative;
   min-height: 70vh;
 }
 
-main .about-wrapper {
+.main-wrapper .about-wrapper {
   top: 15vh;
   position: relative;
   width: 50%;
@@ -510,28 +510,28 @@ main .about-wrapper {
   font-family: 'poppins';
 }
 
-main .about-wrapper h1 {
+.main-wrapper .about-wrapper h1 {
   color: #55ACEE;
   margin-bottom: 2vh;
 }
 
-main .about-wrapper p {
+.main-wrapper .about-wrapper p {
   color: #fff;
   font-size: 14px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .about-wrapper p {
+  .main-wrapper .about-wrapper p {
     font-size: 11px;
     width: 80%;
   }
 }
 
 @media (max-width: 767px) {
-  .about-wrapper {
+  .main-wrapper .about-wrapper {
     width: 80%;
   }
-  .about-wrapper p {
+  .main-wrapper .about-wrapper p {
     font-size: 11px;
   }
 }

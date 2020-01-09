@@ -1,4 +1,4 @@
-main {
+.main-wrapper {
     position: relative;
     min-height: 70vh;
     .about-wrapper {
@@ -22,18 +22,22 @@ main {
 }
 
 @include tablet {
-    .about-wrapper p {
-        font-size: 11px;
-        width: 80%;
+    .main-wrapper {
+        .about-wrapper p {
+            font-size: 11px;
+            width: 80%;
+        }
     }
 }
 
 @include mobile {
-    .about-wrapper {
-        width: 80%;
-    }
-    .about-wrapper p {
-        font-size: 11px;
+    .main-wrapper {
+        .about-wrapper {
+            width: 80%;
+        }
+        .about-wrapper p {
+            font-size: 11px;
 
+        }
     }
 }
