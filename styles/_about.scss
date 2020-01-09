@@ -23,12 +23,14 @@
 
 @include tablet {
     .main-wrapper {
+
         .about-wrapper {
             width: 60%;
             top: 15vh;
         }
         .about-wrapper p {
             font-size: 12px;
+
         }
     }
 }
@@ -37,10 +39,12 @@
     .main-wrapper {
         .about-wrapper {
             width: 80%;
+
             top: 15vh;
         }
         .about-wrapper p {
             font-size: 11px;
+
         }
     }
 }

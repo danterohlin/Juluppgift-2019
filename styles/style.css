@@ -615,7 +615,9 @@ img {
 }
 
 .main-wrapper .about-wrapper {
+
   top: 10vh;
+
   position: relative;
   width: 40%;
   margin: auto;
@@ -635,12 +637,14 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
   .main-wrapper .about-wrapper {
     width: 60%;
     top: 15vh;
   }
   .main-wrapper .about-wrapper p {
     font-size: 12px;
+
   }
 }
 
