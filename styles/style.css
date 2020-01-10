@@ -43,12 +43,12 @@ li a {
 
 body {
   margin: 0;
-  background-color: #2c2c2c;
+  background-color: #252525;
 }
 
 main {
   min-height: 0vh;
-  background-color: #2c2c2c;
+  background-color: #252525;
 }
 
 .navbar {
@@ -60,7 +60,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 9vh;
+  min-height: 8vh;
   background-color: #2c2c2c;
   font-family: 'poppins';
   position: fixed;
@@ -310,7 +310,7 @@ header .header-wrapper .header-hero p {
   font-family: 'poppins';
   font-size: 14px;
   color: white;
-  background-color: #2c2c2c;
+  background-color: #252525;
   letter-spacing: 2px;
   font-weight: 400;
   margin-top: 3vh;
@@ -626,7 +626,7 @@ img {
 }
 
 .main-wrapper .about-wrapper {
-  top: 15vh;
+  top: 20vh;
   position: relative;
   width: 40%;
   margin: auto;
@@ -676,7 +676,7 @@ main .contact-wrapper {
   position: relative;
   width: 60%;
   margin: auto;
-  height: 30vh;
+  height: 22vh;
   color: #fff;
   text-align: center;
   font-family: 'poppins';
@@ -706,7 +706,7 @@ main .contact-wrapper p {
 footer {
   color: white;
   font-family: 'poppins';
-  height: 20vh;
+  height: 18vh;
   background-color: #2c2c2c;
   margin-top: 10vh;
   bottom: 0px;

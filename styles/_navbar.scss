@@ -1,17 +1,17 @@
 
 body {
     margin: 0;
-    background-color: $basegrey-color;
+    background-color: $lightgrey-color;
   }
   main {
     min-height: 0vh;
-    background-color: $basegrey-color;
+    background-color: $lightgrey-color;
   }
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 9vh;
+    min-height: 8vh;
     background-color: $basegrey-color;
     font-family: 'poppins';
     position: fixed;
